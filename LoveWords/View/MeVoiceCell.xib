@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MeVoice" rowHeight="53" id="KGk-i7-Jjw" customClass="MeVoiceCell">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="53"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="52"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Qj-zw-30r">
+                        <rect key="frame" x="218" y="15" width="80" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="B4b-jQ-RmM"/>
+                            <constraint firstAttribute="width" constant="80" id="gWk-rU-nAl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="B4b-jQ-RmM"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ps3-j8-1sF">
+                        <rect key="frame" x="223" y="15" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="4a9-0u-XBr"/>
+                            <constraint firstAttribute="width" constant="30" id="bhY-UJ-beP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fau-iz-C9Y">
+                        <rect key="frame" x="303" y="5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="K5e-U8-P4m"/>
+                            <constraint firstAttribute="height" constant="50" id="LWJ-Hx-nO0"/>
+                            <constraint firstAttribute="width" constant="40" id="nom-Nd-z2P"/>
+                            <constraint firstAttribute="height" constant="50" id="og2-tE-rca"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="btn-nan-touxiang.png"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LWJ-Hx-nO0"/>
+                                <exclude reference="og2-tE-rca"/>
+                            </mask>
+                        </variation>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2aE-DI-76u">
+                        <rect key="frame" x="253" y="15" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="2Wd-6N-H0O"/>
+                            <constraint firstAttribute="width" constant="30" id="EF4-B7-Sms"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ps3-j8-1sF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="0Zu-3C-657"/>
+                    <constraint firstAttribute="bottom" secondItem="5Qj-zw-30r" secondAttribute="bottom" constant="10" id="26A-YF-O8M"/>
+                    <constraint firstItem="2aE-DI-76u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="4NN-5F-J91"/>
+                    <constraint firstItem="2aE-DI-76u" firstAttribute="leading" secondItem="Ps3-j8-1sF" secondAttribute="trailing" id="P2K-1S-EWs"/>
+                    <constraint firstAttribute="bottom" secondItem="fau-iz-C9Y" secondAttribute="bottom" constant="5" id="UHV-Tg-xVd"/>
+                    <constraint firstAttribute="trailing" secondItem="fau-iz-C9Y" secondAttribute="trailing" constant="5" id="Wmk-5Q-K0C"/>
+                    <constraint firstAttribute="bottom" secondItem="fau-iz-C9Y" secondAttribute="bottom" constant="10" id="XlA-F4-Kc8"/>
+                    <constraint firstAttribute="bottom" secondItem="5Qj-zw-30r" secondAttribute="bottom" constant="5" id="ctU-qW-L0l"/>
+                    <constraint firstAttribute="trailing" secondItem="5Qj-zw-30r" secondAttribute="trailing" constant="50" id="hQ2-1B-lwa"/>
+                    <constraint firstAttribute="trailing" secondItem="2aE-DI-76u" secondAttribute="trailing" constant="65" id="lNv-U0-PFa"/>
+                    <constraint firstItem="5Qj-zw-30r" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="qkz-SP-Pok"/>
+                    <constraint firstItem="fau-iz-C9Y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="t7b-ji-6Pv"/>
+                    <constraint firstAttribute="bottom" secondItem="Ps3-j8-1sF" secondAttribute="bottom" constant="5" id="x76-Xh-bVH"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="26A-YF-O8M"/>
+                        <exclude reference="x76-Xh-bVH"/>
+                        <exclude reference="UHV-Tg-xVd"/>
+                        <exclude reference="XlA-F4-Kc8"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="buttonOfHeadImage" destination="fau-iz-C9Y" id="bCH-fS-31e"/>
+                <outlet property="imageViewOfMessage" destination="5Qj-zw-30r" id="YJt-e8-8GU"/>
+                <outlet property="imageViewOfVoice" destination="2aE-DI-76u" id="PWf-N3-fMc"/>
+                <outlet property="labelOfTimes" destination="Ps3-j8-1sF" id="hHl-LY-sRd"/>
+            </connections>
+            <point key="canvasLocation" x="358" y="204.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn-nan-touxiang.png" width="50" height="50"/>
+    </resources>
+</document>

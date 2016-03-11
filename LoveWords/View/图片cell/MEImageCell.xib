@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="119" id="KGk-i7-Jjw" customClass="MEImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYR-ec-JTx">
+                        <rect key="frame" x="270" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="6nd-4P-Tjg"/>
+                            <constraint firstAttribute="height" constant="40" id="age-OK-trb"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="btn-nan-touxiang.png"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NEQ-oR-vHB">
+                        <rect key="frame" x="160" y="20" width="109" height="104"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ns8-Dk-rny">
+                        <rect key="frame" x="165" y="25" width="94" height="94"/>
+                        <color key="backgroundColor" red="0.22082933286629924" green="1" blue="0.91298644286849051" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="93.5" id="RSL-QP-yVe"/>
+                            <constraint firstAttribute="height" constant="93.5" id="oRk-Uh-i2c"/>
+                        </constraints>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NEQ-oR-vHB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="44v-t1-CqA"/>
+                    <constraint firstItem="hYR-ec-JTx" firstAttribute="leading" secondItem="Ns8-Dk-rny" secondAttribute="trailing" constant="11" id="E3M-k1-Uwa"/>
+                    <constraint firstAttribute="trailing" secondItem="hYR-ec-JTx" secondAttribute="trailing" constant="10" id="Ml3-NM-XXa"/>
+                    <constraint firstItem="hYR-ec-JTx" firstAttribute="leading" secondItem="NEQ-oR-vHB" secondAttribute="trailing" constant="1" id="TJx-D6-gzb"/>
+                    <constraint firstItem="Ns8-Dk-rny" firstAttribute="leading" secondItem="NEQ-oR-vHB" secondAttribute="leading" constant="5" id="tYX-7B-XuK"/>
+                    <constraint firstAttribute="bottom" secondItem="Ns8-Dk-rny" secondAttribute="bottom" constant="18.5" id="vi8-8I-HO9"/>
+                    <constraint firstItem="Ns8-Dk-rny" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="wBD-ua-0FH"/>
+                    <constraint firstAttribute="bottom" secondItem="NEQ-oR-vHB" secondAttribute="bottom" constant="13" id="wD0-ue-eFx"/>
+                    <constraint firstItem="hYR-ec-JTx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zy0-gd-Ub1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backImageView" destination="NEQ-oR-vHB" id="MT7-Qa-TXd"/>
+                <outlet property="headImageButton" destination="hYR-ec-JTx" id="SqC-e6-NnK"/>
+                <outlet property="imageButton" destination="Ns8-Dk-rny" id="Syh-k1-rxC"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="298.75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn-nan-touxiang.png" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="KGk-i7-Jjw" customClass="SHETextCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3dK-TL-g2g">
+                        <rect key="frame" x="51" y="15" width="72" height="57"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6N-pi-pXL">
+                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="KJK-vy-QtG"/>
+                            <constraint firstAttribute="width" constant="40" id="PLY-Y6-EW9"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="btn-nv-touxiang.png"/>
+                        <connections>
+                            <action selector="tapHead:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KOg-c8-1RI"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0k-h0-XUr">
+                        <rect key="frame" x="66" y="25" width="42" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="l0k-h0-XUr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="9q0-lw-VN1"/>
+                    <constraint firstItem="3dK-TL-g2g" firstAttribute="leading" secondItem="i6N-pi-pXL" secondAttribute="trailing" constant="1" id="Efh-fd-v7c"/>
+                    <constraint firstItem="i6N-pi-pXL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="FBC-CR-CK0"/>
+                    <constraint firstItem="l0k-h0-XUr" firstAttribute="leading" secondItem="i6N-pi-pXL" secondAttribute="trailing" constant="16" id="MJ9-rE-V4e"/>
+                    <constraint firstItem="3dK-TL-g2g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="XVl-e0-f1N"/>
+                    <constraint firstAttribute="bottom" secondItem="l0k-h0-XUr" secondAttribute="bottom" constant="18.5" id="XtA-iA-BOX"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="l0k-h0-XUr" secondAttribute="trailing" constant="70" id="b7k-f3-XhZ"/>
+                    <constraint firstItem="l0k-h0-XUr" firstAttribute="trailing" secondItem="3dK-TL-g2g" secondAttribute="trailing" constant="-15" id="eZK-JR-VIk"/>
+                    <constraint firstAttribute="bottom" secondItem="3dK-TL-g2g" secondAttribute="bottom" constant="8" id="ezg-a9-Ri0"/>
+                    <constraint firstItem="i6N-pi-pXL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="j0i-YS-9wL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backImageView" destination="3dK-TL-g2g" id="wwd-Q2-eCE"/>
+                <outlet property="content" destination="l0k-h0-XUr" id="sab-Yd-wWS"/>
+                <outlet property="headImageButton" destination="i6N-pi-pXL" id="FVe-bl-MJw"/>
+            </connections>
+            <point key="canvasLocation" x="221" y="348.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn-nv-touxiang.png" width="50" height="50"/>
+    </resources>
+</document>
